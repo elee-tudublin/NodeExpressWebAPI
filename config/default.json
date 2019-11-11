@@ -1,17 +1,19 @@
 {
     "connection":{
-        "authentication" : {
-            "options": {
-                "userName" : "",
-                "password": ""
-            },
-            "type" : "default"
-        },
-        "server" : "",
+        "user" : "",
+        "password": "",
+        "server" : ".database.windows.net",
+        "database" : "",
+        "parseJSON": true,
         "options":
         {
-            "database" : "",
             "encrypt" : true
+        },
+        "pool":
+        {
+        "min": 2,
+        "max": 4,
+        "idleTimeoutMillis": 30000
         }
     }
 }
