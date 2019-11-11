@@ -1,0 +1,17 @@
+{
+    "connection":{
+        "authentication" : {
+            "options": {
+                "userName" : "",
+                "password": ""
+            },
+            "type" : "default"
+        },
+        "server" : "",
+        "options":
+        {
+            "database" : "",
+            "encrypt" : true
+        }
+    }
+}
