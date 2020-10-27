@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support url encoded bodie
 
 /* Configure app Routes to handle requests from browser */
 // The home page 
-app.use('/', require('./routes/index'));
+app.use('/', require('./controllers/index'));
 
 
 // catch 404 and forward to error handler
