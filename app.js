@@ -1,6 +1,7 @@
 // require imports packages required by the application
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const HOST = '127.0.0.1';
 const PORT = 8080;
@@ -24,8 +25,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // support url encoded bodie
 // https://www.npmjs.com/package/cors
 // https://codesquery.com/enable-cors-nodejs-express-app/
 // Simple Usage (Enable All CORS Requests)
-// app.use(cors());
-// app.options('*', cors()) // include before other routes
+app.use(cors());
+app.options('*', cors()) // include before other routes
 
 /* Configure app Routes to handle requests from browser */
 // The home page 
