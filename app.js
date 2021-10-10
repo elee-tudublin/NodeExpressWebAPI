@@ -5,7 +5,7 @@ const helmet = require('helmet');
 const morgon = require('morgan');
 
 const HOST = '0.0.0.0';
-const PORT = 8080;
+const PORT = 5000;
 
 
 // app is a new instance of express (the web app framework)
