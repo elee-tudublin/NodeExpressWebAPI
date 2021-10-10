@@ -19,9 +19,6 @@ app.use((req, res, next) => {
     next();
 }); 
 
-// Logging
-app.use(morgon('combined'));
-
 // Allow app to support differnt body content types
 app.use(express.text());
 // support json encoded bodies
