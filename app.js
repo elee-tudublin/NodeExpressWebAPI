@@ -1,10 +1,8 @@
 // require imports packages required by the application
 const express = require('express');
 const cors = require('cors')
-const helmet = require('helmet');
-const morgon = require('morgan');
 
-const HOST = '0.0.0.0';
+const HOST = '127.0.0.1';
 const PORT = 5000;
 
 
@@ -35,8 +33,8 @@ app.use(express.urlencoded({ extended: true }));
 // https://www.npmjs.com/package/cors
 // https://codesquery.com/enable-cors-nodejs-express-app/
 // Simple Usage (Enable All CORS Requests)
-// app.use(cors());
-// app.options('*', cors()) // include before other routes
+app.use(cors());
+app.options('*', cors()) // include before other routes
 
 /* Configure app Routes to handle requests from browser */
 // The home page 
