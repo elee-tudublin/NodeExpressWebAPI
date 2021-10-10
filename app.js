@@ -24,14 +24,12 @@ app.use((req, res, next) => {
 // Logging
 app.use(morgon('combined'));
 
-// Allow app to support differnt body content types (using the bodyParser package)
+// Allow app to support differnt body content types
 app.use(express.text());
 // support json encoded bodies
 app.use(express.json());
 // support url encoded bodies
-app.use(express.urlencoded({
-    extended: true
-}));
+app.use(express.urlencoded({ extended: true }));
 
 // cors
 // https://www.npmjs.com/package/cors
